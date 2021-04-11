@@ -5,6 +5,6 @@ module.exports = {
     proxy: 'http://codealot.local:3000'
   },
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/REPO_NAME/'
+  ? '/about.codealot.academy/'
   : '/'
 }
