@@ -23,8 +23,9 @@
                   {{translate(getLanguage(), "Faça o teste e receba ofertas das melhores empresas de tecnologia")}}
                 </h1>
                 
-                <router-link to="/start">
-                  <base-button type="success" size="lg" class="align-center">
+                <!-- <router-link to="/start"> -->
+                <router-link to="/">
+                  <base-button type="success" size="lg" class="align-center" disabled>
                   <div class="px-5">
                     <i style="color: white" class="fa fa-check-circle"></i>
                     <span class="btn-inner--text">{{translate(getLanguage(),"Faça o teste")}}</span>
@@ -33,7 +34,7 @@
                 </router-link>
 
                 <p class="lead  text-white">
-                  {{translate(getLanguage(), "Você tem 3 tentativas pra passar: faça agora pra ver como se sai!")}}
+                  {{translate(getLanguage(), "Teste em construção, estará disponível em breve.")}}
                 </p>
                 
               </div>
@@ -371,8 +372,9 @@
           <div class="col px-0">
             <div class="row justify-content-center text-center ">
               <div class="col-lg-6">
-                <router-link to="/start">
-                  <base-button type="success" size="lg" class="align-center">
+                <!-- <router-link to="/start"> -->
+                <router-link to="/">
+                  <base-button type="success" size="lg" class="align-center" disabled>
                   <div class="px-5">
                     <i style="color: white" class="fa fa-check-circle"></i>
                     <span class="btn-inner--text">
@@ -383,7 +385,7 @@
                 </router-link>
 
                 <p class="lead  text">
-                  {{translate(getLanguage(), "Você tem 3 tentativas pra passar: faça agora pra ver como se sai!")}}
+                  {{translate(getLanguage(), "Teste em construção, estará disponível em breve.")}}
                 </p>
                 
               </div>

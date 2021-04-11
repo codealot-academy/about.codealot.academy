@@ -13,8 +13,8 @@
           <a href="#" @click="toggleLanguage()" class="nav-link">English/Português</a>
         </div>
         <div class="nav_inner" v-else>
-          <router-link to="/login" class="nav-link">Login</router-link>
-          <router-link to="/register" class="nav-link">Register</router-link>
+          <router-link to="/tos" class="nav-link">TOS</router-link>
+          <router-link to="/privacidade" class="nav-link">Privacidade</router-link>
           <a href="#" @click="toggleLanguage()" class="nav-link">English/Português</a>
         </div>
       </div>
