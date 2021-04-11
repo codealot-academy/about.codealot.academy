@@ -4,7 +4,7 @@ module.exports = {
     disableHostCheck: true,
     proxy: 'http://codealot.local:3000'
   },
-  publicPath: process.env.NODE_ENV === 'production'
-  ? '/about.codealot.academy/'
-  : '/'
+  // publicPath: process.env.NODE_ENV === 'production'
+  // ? '/about.codealot.academy/'
+  // : '/'
 }
