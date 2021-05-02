@@ -76,7 +76,22 @@
           <div class="col px-0">
             <div class="row justify-content-center text-center ">
               <div class="col-lg-6">
-                <router-link to="/quiz">
+
+
+                <router-link to="/">
+                  <base-button type="success" size="lg" class="align-center" disabled>
+                  <div class="px-5">
+                    <i style="color: white" class="fa fa-check-circle"></i>
+                    <span class="btn-inner--text">{{translate(getLanguage(),"Faça o teste")}}</span>
+                  </div>
+                  </base-button >
+                </router-link>
+
+                <p class="lead  text-white">
+                  {{translate(getLanguage(), "Teste em construção, estará disponível em breve.")}}
+                </p>
+
+                <!-- <router-link to="/quiz">
                   <base-button type="success" size="lg" class="align-center">
                   <div class="px-5">
                     <i style="color: white" class="fa fa-check-circle"></i>
@@ -87,7 +102,7 @@
 
                 <p class="lead  text">
                   Você tem 3 tentativas pra passar: faça agora pra ver como se sai!
-                </p>
+                </p> -->
                 
               </div>
             </div>
@@ -100,5 +115,16 @@
 </template>
 
 <script>
-export default {};
+import translate from "../i18n/i18n.js";
+export default {
+  methods:{
+    getLanguage(){
+      return localStorage.getItem('language') || 0;
+    },
+
+    translate: function(language, phrase){
+      return translate(language, phrase);
+    },
+  }
+};
 </script>
